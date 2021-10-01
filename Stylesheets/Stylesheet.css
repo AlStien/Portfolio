@@ -49,9 +49,32 @@ li, a, button{
     font-size: 34px;
 }
 
-.btn{
+.contact-btn{
     width: 100%;
     text-align: center;
+}
+
+.contact-btn button{
+    padding: 12px;
+    width: 100px;
+    color: #000;
+    background-color: #e6e6e6;
+    border: none;
+    margin: 0;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-btn button:hover{
+    box-shadow: 0 0 8px 0 #373737;
+    background-color: #ececec;
+    color: #5073d9;
+}
+
+.contact-btn button:focus{
+    box-shadow: 0 0 5px 0 #373737;
 }
 
 /*--------header----------*/
@@ -239,13 +262,18 @@ header nav a:hover{
 
 /*------------About Section-----------*/
 
-.about{
-    margin: 10% 5% 10% 6%;
+.about-sec{
+    margin: 10% 5% 9% 6%;
     padding: 0;
+    justify-content: center;
     align-items: center;
     color: #ececec;
+}
+
+.about{
     display: flex;
     font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .book-logo{
@@ -380,29 +408,6 @@ header nav a:hover{
 
 .contact-form div input:focus{
     box-shadow: 0 0 8px 0 #373737;
-}
-
-.contact-form .btn button{
-    padding: 12px;
-    width: 100px;
-    color: #000;
-    background-color: #e6e6e6;
-    border: none;
-    margin: 0;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.contact-form .btn button:hover{
-    box-shadow: 0 0 8px 0 #373737;
-    background-color: #ececec;
-    color: #5073d9;
-}
-
-.contact-form .btn button:focus{
-    box-shadow: 0 0 5px 0 #373737;
 }
 
 .message-box .message-image{
