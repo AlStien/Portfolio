@@ -7,8 +7,10 @@
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="./Stylesheets/Stylesheet.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">   
     <!--LOGO-->
-    <link rel="shortcut icon" href="./Images/Logo-black.png">    
+    <link rel="shortcut icon" href="./Images/Logo-black.png"> 
     <title>Ayush Jain | Portfolio | Software Incubator</title>
 </head>
 <body>
@@ -20,10 +22,9 @@
         <!--Navigation-->
             <nav>
                 <ul class="navLinks">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         <!--logo-->    
@@ -43,14 +44,14 @@
         </div>
     
     <!--About-->
-        <div class="about">
+        <div class="about" id="about">
             <div class="book-logo"></div>
             <p>I'm Ayush Jain, a IInd Year student at AKGEC, Ghaziabad pursuing my Bachelors in Computer Science Engineering. I like Competitive Programming and am interested in Machine Learning and AI. I am highly motivated to learn new things and am currently learning Web Development and Data Science.</p>
             <!-- <p>This Portfolio is a trial attempt for my Web-D skills.</p> -->
         </div>    
 
     <!--Skills-->
-        <div class="skills">
+        <div class="skills" id="skills">
             <h1 class="section-title">SKILLS</h1>
             <div class="skill-logos">
                 <img src="./Images/Icons/html5.svg">
@@ -61,7 +62,7 @@
         </div>
 
     <!--Contact-->
-        <div class="contact">
+        <div class="contact" id="contact">
             <h1 class="section-title">DROP ME A HI! &#128075;</h1>
             <div class="message-box">
                 <form class="contact-form">
@@ -81,10 +82,23 @@
                     <div class="btn">
                         <button>Send</button>
                     </div>
-                        </form>
-            <div class="message-image"></div>
+                </form>
+                <div class="message-image"></div>
             </div>
-    </div>
+        </div>
+
+    <!--Footer-->
+        <footer>
+            <h1 class="section-title" style="font-size: 20px; margin-bottom: 3%; color: #ececec;">Ayush Jain &copy; 2021, All Rights Reserved</h1>
+            <nav>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
 
     <!--container end-->
     </div>
