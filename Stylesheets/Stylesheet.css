@@ -18,8 +18,6 @@ body{
 }
 
 .container{
-    /* background-image: url(../Images/background-1.jpg); */
-    /* background-color: #ececec; */
     background: linear-gradient(#58a1d9, #5073d9);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,11 +48,6 @@ nav a:hover{
     font-size: 23px;
 }
 
-/* .logo{
-    height: 40px;
-    width: 60px;
-} */
-
 .website-logo{
     background-image: url('../Images/Logo-white-logo.png');
     background-position: center;
@@ -65,11 +58,6 @@ nav a:hover{
     cursor: pointer;
     transition-duration: 0.5s;
 }
-
-/* .website-logo:hover{
-    background-image: url('../Images/Logo-hover.png');
-    transition-duration: 0.5s;
-} */
 
 header{
     background-color: rgba(0, 0, 0, 0.75);
@@ -90,6 +78,8 @@ header{
     padding: 0 20px;
 }
 
+/*------------intro div------------*/
+
 .intro{
     background-color: #ececec;
     display: flex;
@@ -98,8 +88,10 @@ header{
     padding-top: 100px;
     margin: 0;
     margin-bottom: 1%;
-    box-shadow: 0 0 50px 0 #000;
+    box-shadow: 0 0 100px 0 #242424;
 }
+
+/*----Text Part----*/
 
 .col-1{
     flex-basis: 50%;
@@ -114,11 +106,11 @@ header{
 
 .col-1 h3{
     font-size: 130%;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .col-1 h4{
-    font-weight: 80;
+    font-weight: 100;
 }
 
 .col-1::before{
@@ -130,6 +122,8 @@ header{
     left: -3%;
     top: -2%;
 }
+
+/*-----Image-----*/
 
 .col-2{
     position: relative;
@@ -144,11 +138,10 @@ header{
     border-radius: 20%;
 }
 
+/*------------About Section-----------*/
+
 .about{
-    margin-left: 7%;
-    margin-top: 6%;
-    margin-bottom: 3%;
-    margin-right: 5%;
+    margin: 10% 5% 10% 6%;
     padding: 0;
     align-items: center;
     color: #ececec;
@@ -156,13 +149,13 @@ header{
 }
 
 .book-logo{
-    margin-left:4%;
+    margin-left: 3%;
     background-image: url(../Images/book-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 140px;
-    width: 300px;
+    height: 130px;
+    width: 320px;
 }
 
 .about p{
@@ -171,4 +164,31 @@ header{
     text-align: left;
     line-height: 1.5em;
     font-size: 18px;
+}
+
+/*--------------Skills Section-----------*/
+
+.skills{
+    background-color: #ececec;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7% 0;
+    margin: 0;
+    box-shadow: 0 0 300px 0 #242424;
+}
+
+.skills h1{
+    margin: 0 0 5% 45%;
+}
+
+.skill-logos{
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.skills .skill-logos img{
+    margin: 0 7.5%;
+    width: 130px;
+    height: 130px;
 }
