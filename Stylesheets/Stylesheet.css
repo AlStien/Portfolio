@@ -29,6 +29,12 @@ body{
     overflow: hidden;
 }
 
+/* .container-set{
+    max-width: 2160px;
+    padding: 0 16px 0 16px;
+    margin: 0 auto;
+}
+ */
 li, a, button{
     font-weight: 500;
     /* font-size: 18px; */
@@ -97,6 +103,7 @@ header nav a:hover{
     justify-content: space-between;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: 100px;
     margin: 0;
     margin-bottom: 1%;
     box-shadow: 0 0 100px 0 #373737;
@@ -127,12 +134,13 @@ header nav a:hover{
 .col-1::before{
     content: ' ';
     width: 8px;
-    height: 107%;
+    height: 165px;
     background: linear-gradient(#58a1d9, #5073d9);
     position: absolute;
-    left: -3%;
-    top: -2%;
+    left: -20px;
+    top: -5px;
 }
+
 
 .col-2{
     position: relative;
@@ -142,10 +150,92 @@ header nav a:hover{
 }
 
 .col-2 .pic{
+    margin-left: 80px;
     width: 50%;
-    margin-bottom: 15%;
     border-radius: 20%;
 }
+
+    /*------responsive features-----------*/
+
+        @media(max-width: 1178px)
+        {    
+            .col-1::before{
+                width: 6px;
+                height: 120px;
+                /* left: -20px;
+                top: -5px; */
+            }
+            .col-1 h1{
+                font-size: 50px;
+            }
+            
+            .col-1 h3{
+                font-size: 17px;
+            }
+            
+            .col-1 h4{
+                font-size: 15px;
+            }
+            
+            .col-2 .pic{
+                margin-left: 100px;
+            }        
+        }
+
+        @media(max-width: 917px)
+        {
+            .col-1::before{
+                width: 6px;
+                height: 100px;
+                top: 0;
+            }
+
+            .col-1 h3{
+                font-size: 14px;
+            }
+            
+            .col-1 h1{
+                font-size: 40px;
+            }
+            
+            .col-1 h4{
+                font-size: 13px;
+            }
+            
+            .col-2 .pic{
+                margin-left: 100px;
+            }        
+        }
+        @media(max-width: 415px)
+        {
+            .intro{
+                padding-bottom: 50px;
+                padding-top: 150px;
+            }
+            .col-1::before{
+                width: 6px;
+                height: 140px;
+                top: 0;
+            }
+
+            .col-1 h3{
+                font-size: 12px;
+            }
+            
+            .col-1 h1{
+                font-size: 35px;
+            }
+            
+            .col-1 h4{
+                font-size: 10px;
+            }
+            
+            .col-2 .pic{
+                width: 80%;
+                margin-top: -50px;
+                margin-left: 20px;
+            }        
+        }
 
 /*------------About Section-----------*/
 
@@ -159,6 +249,7 @@ header nav a:hover{
 }
 
 .book-logo{
+    display: block;
     margin-left: 3%;
     background-image: url(../Images/book-logo.png);
     background-position: center;
@@ -169,12 +260,25 @@ header nav a:hover{
 }
 
 .about p{
+    justify-content: center;
     word-wrap: break-word;
     padding: 10px 10px 5px 60px;
     text-align: left;
     line-height: 1.5em;
     font-size: 18px;
 }
+
+    /*------responsive features-----------*/
+
+        @media(max-width: 700px)
+        {
+            .about{
+                margin-left: 0;
+            }
+            .book-logo{
+                display: none;
+            }
+        }
 
 /*--------------Skills Section-----------*/
 
@@ -190,15 +294,45 @@ header nav a:hover{
 
 .skill-logos{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 4%;
 }
 
 .skills .skill-logos img{
-    margin: 0 7.5%;
+    justify-content: center;
+    margin: 16px 7.5%;
     width: 130px;
     height: 130px;
 }
+
+    /*----responsive features-----*/
+
+        @media(max-width: 1354px)
+        {
+            .skills .skill-logos img{
+                margin: 16px 80px;
+            }    
+        }
+
+        @media(max-width: 1209px)
+        {
+            .skills .skill-logos img{
+                margin: 16px 60px;
+                width: 80px;
+                height: 80px;
+            }    
+        }
+
+        @media(max-width: 905px)
+        {
+            .skills .skill-logos img{
+                margin: 30px 80px;
+                width: 90px;
+                height: 90px;
+            }    
+        }
 
 /*-----------Contact Section-----------*/
 .contact{
@@ -211,8 +345,8 @@ header nav a:hover{
 
 .message-box{
     width: 100%;
-    margin-right: 10%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-form{
@@ -250,7 +384,7 @@ header nav a:hover{
 
 .contact-form .btn button{
     padding: 12px;
-    width: 20%;
+    width: 100px;
     color: #000;
     background-color: #e6e6e6;
     border: none;
@@ -280,6 +414,34 @@ header nav a:hover{
     height: 400px;
 }
 
+    /*-----responsive features-----*/
+        @media(max-width: 1194px)
+        {
+            .contact-form div label{
+                font-size: 17px;
+                padding-bottom: 108px;
+            }
+            
+            .message-box .message-image{
+                display: none;
+            }
+            .contact-form{
+                width: 100%;
+            }
+        }
+        @media(max-width: 600px)
+        {
+            .contact .section-title{
+                font-size: 28px;
+            }
+        }
+        @media(max-width: 395px)
+        {
+            .contact .section-title{
+                font-size: 24px;
+            }
+        }
+
 /*--------Footer--------*/
 
 footer{
@@ -294,6 +456,12 @@ footer{
     align-content: center;
 }
 
+footer .section-title{
+    font-size: 20px; 
+    margin-bottom: 20px;
+    color: #ececec; 
+    font-weight: 80;
+}
 
 .social-links{
     display: flex;
@@ -308,4 +476,42 @@ footer{
     color: #ececec;
     padding: 0 50px;
     font-size: 35px;
+}
+
+@media(max-width: 800px)
+{
+    footer .section-title{
+        margin-bottom: 15px;
+        font-size: 18px; 
+    }
+
+    .social-links li a{
+        padding: 0 45px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    footer .section-title{
+        margin-bottom: 0px;
+        font-size: 16px; 
+    }
+
+    .social-links li a{
+        padding: 0 32px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 390px)
+{
+    footer .section-title{
+        font-size: 14px; 
+    }
+
+    .social-links li a{
+        padding: 0 28px;
+        font-size: 22px;
+    }
 }
