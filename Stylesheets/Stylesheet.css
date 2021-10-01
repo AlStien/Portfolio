@@ -17,6 +17,19 @@ body{
     background-color: #2f79c9;
 }
 
+.container{
+    /* background-image: url(../Images/background-1.jpg); */
+    /* background-color: #ececec; */
+    background: linear-gradient(#58a1d9, #5073d9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 0 ;
+    overflow: hidden;
+}
+
 li, a, button{
     font-weight: 500;
     font-size: 18px;
@@ -77,26 +90,15 @@ header{
     padding: 0 20px;
 }
 
-.container{
-    /* background-image: url(../Images/background-1.jpg); */
-    /* background-color: #ececec; */
-    background: linear-gradient(#58a1d9, #5073d9);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-}
-
 .intro{
     background-color: #ececec;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 100px;
-    margin: 100px 0;
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 1%;
+    box-shadow: 0 0 50px 0 #000;
 }
 
 .col-1{
@@ -138,19 +140,35 @@ header{
 
 .col-2 .pic{
     width: 50%;
-    margin-bottom: 12%;
+    margin-bottom: 15%;
     border-radius: 20%;
 }
 
 .about{
-    background-color: red;
-    margin-top: 0;
+    margin-left: 7%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    margin-right: 5%;
     padding: 0;
+    align-items: center;
+    color: #ececec;
+    display: flex;
 }
 
-.about h1{
-    margin-top: 0;
-    padding: 0;
-    font-family: Comic Sans MS;
-    font-size: 300%;
+.book-logo{
+    margin-left:4%;
+    background-image: url(../Images/book-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 300px;
+}
+
+.about p{
+    word-wrap: break-word;
+    padding: 10px 10px 5px 60px;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 18px;
 }
