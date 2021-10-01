@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    height: 100vh;
+}
+
+*{
+    /* background-color: #2f79c9; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: Bahnschrift, Montserrat, sans-serif;
+}
+
+body{
+    background-color: #2f79c9;
+}
+
+li, a, button{
+    font-weight: 500;
+    font-size: 18px;
+    color: #f2e2aa;
+    text-decoration: none;
+}
+
+nav a{
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    text-shadow: 5px black;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+    font-size: 23px;
+}
+
+/* .logo{
+    height: 40px;
+    width: 60px;
+} */
+
+.website-logo{
+    background-image: url('../Images/Logo-white-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 75px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/* .website-logo:hover{
+    background-image: url('../Images/Logo-hover.png');
+    transition-duration: 0.5s;
+} */
+
+header{
+    background-color: rgba(0, 0, 0, 0.75);
+    /* background: transparent; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    padding-left: 14%;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.container{
+    /* background-image: url(../Images/background-1.jpg); */
+    background-color: #ececec;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 15%;
+}
+
+.col-1 h1{
+    font-family: Forte;
+    font-size: 64px;
+}
+
+.col-1 h3{
+    font-size: 24px;
+    font-weight: 350;
+}
+
+.col-1 h4{
+    font-weight: 80;
+}
+
+.col-1::before{
+    content: ' ';
+    width: 8px;
+    height: 107%;
+    background: linear-gradient(#58a1d9, #5073d9);
+    position: absolute;
+    left: -3%;
+    top: -2%;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .pic{
+    width: 50%;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.colorbox{
+    position: absolute;
+    top: -50%;
+    background: linear-gradient(#58a1d9, #5073d9);
+    height: 150%;
+    width: 100%;
+    z-index: 0;
+}
