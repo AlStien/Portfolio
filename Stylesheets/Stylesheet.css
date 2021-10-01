@@ -11,6 +11,7 @@ html {
     padding: 0;
     vertical-align: baseline;
     font-family: Bahnschrift, Montserrat, sans-serif;
+    transition-duration: 0.5s;
 }
 
 body{
@@ -33,6 +34,28 @@ li, a, button{
     font-size: 18px;
     color: #f2e2aa;
     text-decoration: none;
+}
+
+.section-title{
+    text-align: center;
+    margin: 0 0 5% 0;
+    font-size: 36px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+/*--------header----------*/
+
+header{
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    padding-left: 14%;
 }
 
 nav a{
@@ -59,16 +82,6 @@ nav a:hover{
     transition-duration: 0.5s;
 }
 
-header{
-    background-color: rgba(0, 0, 0, 0.75);
-    /* background: transparent; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 10%;
-    padding-left: 14%;
-}
-
 .navLinks{
     list-style: none;
 }
@@ -88,12 +101,11 @@ header{
     padding-top: 100px;
     margin: 0;
     margin-bottom: 1%;
-    box-shadow: 0 0 100px 0 #242424;
+    box-shadow: 0 0 100px 0 #373737;
 }
 
-/*----Text Part----*/
-
 .col-1{
+    margin-top: -100px;
     flex-basis: 50%;
     position: relative;
     margin-left: 15%;
@@ -122,8 +134,6 @@ header{
     left: -3%;
     top: -2%;
 }
-
-/*-----Image-----*/
 
 .col-2{
     position: relative;
@@ -172,13 +182,9 @@ header{
     background-color: #ececec;
     justify-content: space-between;
     align-items: center;
-    padding: 7% 0;
+    padding: 6% 0;
     margin: 0;
-    box-shadow: 0 0 300px 0 #242424;
-}
-
-.skills h1{
-    margin: 0 0 5% 45%;
+    box-shadow: 0 0 100px 0 #373737;
 }
 
 .skill-logos{
@@ -192,3 +198,83 @@ header{
     width: 130px;
     height: 130px;
 }
+
+/*-----------Contact Section-----------*/
+.contact{
+    margin: 8% 0% 7% 0%;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.message-box{
+    width: 100%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.contact-form{
+    margin: 0 10%;
+    width: 39%;
+}
+
+.contact-form div{
+    padding: 16px;
+}
+
+.contact-form div label{
+    font-size: 17px;
+    padding-bottom: 108px;
+}
+
+.contact-form div input , .contact-form div textarea{
+    outline: none;
+    margin-top: 6px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.contact-form div input:hover{
+    box-shadow: 0 0 8px 0 #373737;
+}
+
+.contact-form div input:focus{
+    box-shadow: 0 0 8px 0 #373737;
+}
+
+.contact-form .btn button{
+    padding: 12px;
+    width: 20%;
+    color: #000;
+    background-color: #e6e6e6;
+    border: none;
+    margin: 0;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form .btn button:hover{
+    box-shadow: 0 0 8px 0 #373737;
+    background-color: #ececec;
+    color: #5073d9;
+}
+
+.contact-form .btn button:focus{
+    box-shadow: 0 0 5px 0 #373737;
+}
+
+.message-box .message-image{
+    background: url(../Images/Icons/message.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 490px;
+    height: 400px;
+}
+
+/*--------Footer--------*/
