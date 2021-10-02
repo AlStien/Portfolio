@@ -478,45 +478,63 @@ footer .section-title{
 }
 
 .social-links li a{
-    color: #ececec;
+    color: #999898;
     padding: 0 50px;
     font-size: 35px;
 }
 
-@media(max-width: 800px)
-{
-    footer .section-title{
-        margin-bottom: 15px;
-        font-size: 18px; 
-    }
-
-    .social-links li a{
-        padding: 0 45px;
-        font-size: 30px;
-    }
+.fa-github:hover{
+    color: #fff;
 }
 
-@media(max-width: 500px)
-{
-    footer .section-title{
-        margin-bottom: 0px;
-        font-size: 16px; 
-    }
-
-    .social-links li a{
-        padding: 0 32px;
-        font-size: 25px;
-    }
+.fa-linkedin-in:hover{
+    color: #0a66c2;
 }
 
-@media(max-width: 390px)
-{
-    footer .section-title{
-        font-size: 14px; 
-    }
-
-    .social-links li a{
-        padding: 0 28px;
-        font-size: 22px;
-    }
+.fa-instagram:hover{
+    color: #933aa0;
 }
+
+.fa-twitter:hover{
+    color: #a1ddff;
+}
+
+    /*-------responsive section---------*/
+
+        @media(max-width: 800px)
+        {
+            footer .section-title{
+                margin-bottom: 15px;
+                font-size: 18px; 
+            }
+
+            .social-links li a{
+                padding: 0 45px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width: 500px)
+        {
+            footer .section-title{
+                margin-bottom: 0px;
+                font-size: 16px; 
+            }
+
+            .social-links li a{
+                padding: 0 32px;
+                font-size: 25px;
+            }
+        }
+
+        @media(max-width: 390px)
+        {
+            footer .section-title{
+                font-size: 14px; 
+            }
+
+            .social-links li a{
+                padding: 0 28px;
+                font-size: 22px;
+            }
+        }
