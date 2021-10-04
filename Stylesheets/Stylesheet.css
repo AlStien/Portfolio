@@ -104,9 +104,9 @@ header nav a:hover{
 
 .website-logo{
     background-image: url('../Images/Logo-white-logo.png');
-    /* background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     height: 50px;
     width: 75px;
     cursor: pointer;
